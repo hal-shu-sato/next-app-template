@@ -12,7 +12,8 @@
     "lint:ts": "tsc --incremental false --noEmit",
     "fix": "run-s fix:next fix:prettier",
     "fix:next": "next lint --fix",
-    "fix:prettier": "prettier --write ."
+    "fix:prettier": "prettier --write .",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "^14",
@@ -29,6 +30,8 @@
     "eslint": "^8",
     "eslint-config-next": "^14",
     "eslint-config-prettier": "^9",
+    "husky": "^9",
+    "lint-staged": "^15",
     "npm-run-all2": "^6",
     "prettier": "^3",
     "prettier-plugin-packagejson": "^2",
