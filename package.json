@@ -22,6 +22,9 @@
     "@typescript-eslint/parser": "^6",
     "eslint": "^8",
     "eslint-config-next": "^14",
+    "eslint-config-prettier": "^9",
+    "prettier": "^3",
+    "prettier-plugin-packagejson": "^2",
     "typescript": "^5"
   }
 }
