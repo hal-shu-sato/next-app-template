@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "run-s -c lint:ts lint:next lint:prettier",
+    "lint:next": "next lint",
+    "lint:prettier": "prettier --check .",
+    "lint:ts": "tsc --incremental false --noEmit",
+    "fix": "run-s fix:next fix:prettier",
+    "fix:next": "next lint --fix",
+    "fix:prettier": "prettier --write ."
   },
   "dependencies": {
     "next": "^14",
