@@ -27,6 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
+    ".lintstagedrc.mjs",
     "eslint.config.mjs"
   ],
   "exclude": ["node_modules"]
