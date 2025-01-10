@@ -1,8 +1,9 @@
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
 import { FlatCompat } from '@eslint/eslintrc';
 import pluginJs from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import tseslint from 'typescript-eslint';
 
 const __filename = fileURLToPath(import.meta.url);
