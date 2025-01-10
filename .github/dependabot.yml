@@ -10,6 +10,15 @@ updates:
     schedule:
       interval: 'daily'
     groups:
+      next:
+        patterns:
+          - '@next/*'
+          - 'next'
+          - 'eslint-config-next'
+      react:
+        patterns:
+          - 'react'
+          - 'react-dom'
       eslint:
         patterns:
           - '@eslint/*'
