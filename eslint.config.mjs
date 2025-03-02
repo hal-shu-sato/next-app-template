@@ -1,4 +1,4 @@
-import path from 'node:path';
+import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { FlatCompat } from '@eslint/eslintrc';
@@ -7,12 +7,12 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import tseslint from 'typescript-eslint';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = dirname(__filename);
 const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-export default tseslint.config(
+const eslintConfig = tseslint.config(
   {
     ignores: ['**/node_modules/'],
   },
@@ -79,3 +79,5 @@ export default tseslint.config(
   },
   eslintConfigPrettier,
 );
+
+export default eslintConfig;
