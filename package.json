@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "next build --turbopack",
     "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "run-s -c lint:ts lint:next lint:prettier",
-    "lint:next": "next lint",
+    "fix": "run-s fix:eslint fix:prettier",
+    "fix:eslint": "eslint --fix",
+    "fix:prettier": "prettier --write .",
+    "lint": "run-s -c lint:ts lint:eslint lint:prettier",
+    "lint:eslint": "eslint",
     "lint:prettier": "prettier --check .",
     "lint:ts": "tsc --incremental false --noEmit",
-    "fix": "run-s fix:next fix:prettier",
-    "fix:next": "next lint --fix",
-    "fix:prettier": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "start": "next start"
   },
   "dependencies": {
     "next": "^15",
