@@ -16,7 +16,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^15",
+    "next": "^16",
     "react": "^19",
     "react-dom": "^19",
     "sharp": "^0.34"
@@ -28,7 +28,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "^15",
+    "eslint-config-next": "^16",
     "eslint-config-prettier": "^10",
     "husky": "^9",
     "lint-staged": "^16",
