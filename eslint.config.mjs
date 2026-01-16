@@ -26,17 +26,14 @@ const eslintConfig = defineConfig(
   ]),
   {
     languageOptions: {
-      ecmaVersion: 2017,
-      sourceType: 'script',
-
       parserOptions: {
         projectService: {
           allowDefaultProject: ['*.mjs'],
         },
-        tsconfigRootDir: import.meta.dirname,
       },
     },
-
+  },
+  {
     rules: {
       'import/order': [
         'error',
