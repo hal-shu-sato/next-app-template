@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { FlatCompat } from '@eslint/eslintrc';
 import pluginJs from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -12,7 +13,7 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = tseslint.config(
+const eslintConfig = defineConfig(
   pluginJs.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
