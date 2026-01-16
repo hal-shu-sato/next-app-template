@@ -28,7 +28,7 @@ const eslintConfig = defineConfig(
     languageOptions: {
       parserOptions: {
         projectService: {
-          allowDefaultProject: ['*.mjs'],
+          allowDefaultProject: ['*.js', '*.mjs'],
         },
       },
     },
