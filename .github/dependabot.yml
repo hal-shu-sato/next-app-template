@@ -26,3 +26,4 @@ updates:
       prettier:
         patterns:
           - 'prettier*'
+          - '@trivago/prettier-plugin-sort-imports'
